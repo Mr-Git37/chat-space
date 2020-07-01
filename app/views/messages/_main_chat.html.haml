@@ -1,0 +1,44 @@
+.chat-main
+  .chat-main__group-info
+    
+    .chat-main__group-info__leftheader
+      .chat-main__group-info__leftheader__groupname
+        test
+      .chat-main__group-info__leftheader__memberlist
+        Member : name
+    .chat-main__group-info__leftheader__editButton
+      =link_to "Edit", class: "Contents__btn Contents__btn--Edit"
+        
+  .chat-main__message-list
+    .list
+      .list__speaker
+        masa
+      .list__time
+        2020/6/29(Mon)20:00
+    .chat-main__message-list__textarea
+      こんばんは
+    .list2
+      .list__speaker2
+        masa
+      .list__time2
+        2020/6/29(Mon)21:00
+    .chat-main__message-list__textarea2
+      こんばんは
+
+  .Footer
+    .From
+      .From__message
+        %input.Form__inputContent{:placeholder => "type a message", :type => "text"}
+
+      .From__image
+        %label{class: "input-box__image"}
+          = icon('far', 'image')
+          %input{type: "file",class: "input-box__image__file" }
+
+      .chat-main__submit
+        %input.Form__submit{"data-disable-with" => "Send", :name => "Send", :type => "submit", :value => "Send"}
+          
+        
+
+    
+    
