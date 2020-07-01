@@ -29,11 +29,10 @@
     .From
       .From__message
         %input.Form__inputContent{:placeholder => "type a message", :type => "text"}
-
-      .From__image
-        %label{class: "input-box__image"}
-          = icon('far', 'image')
-          %input{type: "file",class: "input-box__image__file" }
+        .From__image
+          %label{class: "input-box__image"}
+            = icon('far', 'image')
+            %input{type: "file",class: "input-box__image__file" }
 
       .chat-main__submit
         %input.Form__submit{"data-disable-with" => "Send", :name => "Send", :type => "submit", :value => "Send"}
