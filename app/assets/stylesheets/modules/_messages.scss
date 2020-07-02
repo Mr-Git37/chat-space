@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+  }
+  .wrapper{ 
+    display: flex;
+    height: 100vh;
+  }
+@import "side_bar";
+@import "chat_main";

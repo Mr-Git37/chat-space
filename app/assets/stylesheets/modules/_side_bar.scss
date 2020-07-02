@@ -1,0 +1,54 @@
+.side-bar{
+    background-color: #253141;
+    width: 300px;
+    &__header{ 
+        height: 100px;
+        padding: 0 20px; 
+        display: flex;
+        align-items: center;
+    } 
+    &__group{
+        height:calc(100vh - 100px);
+    &__list{
+        height: 65px;
+        padding: 0 20px;
+        color: #ffffff;
+    &__group__name{ 
+        font-size: 15px;
+    }
+    .side-bar__group__message{
+        font-size: 11px;
+    }  
+}
+}
+}
+
+.sidebar__header__top-items{
+    color: #ffffff ;
+    font-size: 16px;
+    height: 20px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    &__name{
+        
+    }
+    &__icons{
+        width: 60px;
+        display: flex;
+        justify-content: flex-end;
+        a {
+            text-decoration: none;
+        }
+        .Contents__btn--edit{
+            color: #ffffff;   
+            text-decoration: none; 
+            padding-right: 5px;
+        }
+        .Contents__btn--cog{
+            color: #ffffff; 
+            text-decoration: none;
+        }
+    }
+} 
+
