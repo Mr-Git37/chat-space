@@ -1,7 +1,7 @@
 .side-bar{
     background-color: #253141;
     width: 300px;
-    &__header{ 
+    &__header{
         height: 100px;
         padding: 0 20px; 
         display: flex;
@@ -13,7 +13,7 @@
         height: 65px;
         padding: 0 20px;
         color: #ffffff;
-    &__group__name{ 
+    &__group__name{
         font-size: 15px;
     }
     .side-bar__group__message{
