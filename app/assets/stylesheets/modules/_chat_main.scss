@@ -18,16 +18,16 @@
 }
 }
 
-.chat-main__group-info__leftheader__memberlist{
-    color: #999999;
-    font-size: 12px;
-    margin-left: 40px;
+.chat-main__group-info__rightheader{
+    color: #38AEF0;
+    font-size: 15px;
+
     &__editButton{
-        display: flex;
-        align-items: center;
+        display: block;
         height: 40px;
         color: #38aef0;
         font-size: 16px;
+        margin-top: 28px;
         border-top-color:#38aef0;
         border-top-style: solid;
         border-top-width: 1px;
@@ -40,8 +40,7 @@
         border-left-color: #38aef0;
         border-left-style: solid;
         border-left-width: 1px;
-        margin: 28px;
-        padding: 0 20px;
+        padding: 6px 20px;
         a{text-decoration: none;
         }
     }
@@ -67,13 +66,14 @@
     &__speaker{
     color: #333333;
     font-size: 16px;
-    &__time{
-        color: #999999;
-        font-size: 12px;
-    }
+    
     }
     }
 
+    .list__time{
+        color: #999999;
+        font-size: 12px;
+    }
 .chat-main__message-list__textarea{
     color: #434a54;
     font-size: 14px;
@@ -105,17 +105,21 @@
     }
 
 .Footer{
-    height: 70px;
+    height: 90px;
     background-color: #d2d2d2;
     display: flex;
+    padding: 20px 50px 20px 40px;
+    box-sizing: border-box;
 }
 
-.From{
+.Form{
     display: flex;
-    &__image{
-        display: flex;
-        align-items: center;
+    position: relative;
+    width: 100%;
+    &__inputImage{
         position: absolute; right:30px;
+        font-size: 25px;
+        line-height: 50px;
     }
 
     &__message{
@@ -127,10 +131,9 @@
         width: 880px;
         padding: 10px;
         margin: 10px 0 10px 30px;
-        position: relative;
 }
 
-.input-box__image__file{
+.Hidden{
     display: none;
 }
 
@@ -144,12 +147,13 @@
     border: none;
     height: 50px;
     width: 100%;
+    position: relative;
 }
 
 .Form__submit{
     background-color: #38adf0;
     text-decoration: none;
-    padding: 12px 30px 12px 30px;
+    padding: 0px 30px 0px 30px;
     color: #fff;
     font-size: 16px;
     border-style: none;
