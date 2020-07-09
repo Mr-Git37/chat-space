@@ -9,12 +9,13 @@
         align-items: center;
     } 
     &__group{
-        height:calc(100vh - 100px);
+        height:calc(100vh - 70px);
+        background-color: #2f3e51;
     }
         
     .side-bar__group__list{
         height: 65px;
-        padding: 0 20px;
+        padding: 20px;
     }
     .side-bar__group__name{
         font-size: 15px;
