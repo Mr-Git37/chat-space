@@ -21,11 +21,9 @@
 .chat-main__group-info__rightheader{
     color: #38AEF0;
     font-size: 15px;
-
     &__editButton{
         display: block;
         height: 40px;
-        color: #38aef0;
         font-size: 16px;
         margin-top: 28px;
         border-top-color:#38aef0;
@@ -42,6 +40,7 @@
         border-left-width: 1px;
         padding: 6px 20px;
         a{text-decoration: none;
+            color: #38aef0;
         }
     }
 
@@ -58,7 +57,12 @@
 
 .chat-main__message-list{
     height: calc(100vh - 190px);
-    margin: 35px 0 0 40px;}
+    margin: 35px 0 0 40px;
+    overflow: scroll;}
+
+.message-box{
+    margin-bottom: 20px;
+}
     
 
 .list{
@@ -73,6 +77,7 @@
     .list__time{
         color: #999999;
         font-size: 12px;
+        margin-left: 10px;
     }
 .chat-main__message-list__textarea{
     color: #434a54;
