@@ -5,6 +5,12 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 validates :name, presence: true, uniqueness: true
 
+def self.search(input, id)
+  return nil if input == ""
+  User.where(['name LIKE ?', "%#{input}%"] ).where.not(id: id).limit(10)
+end
+
+
 has_many :group_users
 has_many :groups, through: :group_users
 has_many :messages
