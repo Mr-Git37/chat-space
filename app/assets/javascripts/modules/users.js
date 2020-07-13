@@ -29,8 +29,8 @@ $(function() {
     $(".ChatMembers").append(html);
   }
 
-  $("#SettingGroupForm__input").on("keyup", function() {
-    let input = $("#SettingGroupForm__input").val();
+  $("#UserSearch__field").on("keyup", function() {
+    let input = $("#UserSearch__field").val();
     $.ajax({
       type: "GET",
       url: "/users",
