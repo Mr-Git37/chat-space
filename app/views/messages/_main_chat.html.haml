@@ -4,15 +4,17 @@
   
     .chat-main__group-info__leftheader
       .chat-main__group-info__leftheader__groupname
-        test
+        = @group.name
       .chat-main__group-info__leftheader__memberlist
-        Member : sss
+        Member:
+        - @group.users.each do |user|
+          = user.name
     .chat-main__group-info__rightheader__editButton
       =link_to edit_group_path(@group)  do
         Edit
   .chat-main__message-list
     = render @messages
-      
+
 
   .Footer
     = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
