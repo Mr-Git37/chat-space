@@ -2,6 +2,7 @@
     background-color: #253141;
     width: 300px;
     height: 100vh;
+    
     &__header{
         height: 100px;
         padding: 0 20px; 
@@ -11,16 +12,17 @@
     &__group{
         height:calc(100vh - 100px);
         background-color: #2f3e51;
+        overflow-y: scroll;
     }
         
     .side-bar__group__list{
         height: 65px;
         padding: 20px;
+        a{text-decoration: none;}
     }
     .side-bar__group__name{
         font-size: 15px;
         color: #ffffff;
-        
     }
     .side-bar__group__message{
         font-size: 11px;
