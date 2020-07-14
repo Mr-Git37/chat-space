@@ -2,43 +2,51 @@ $(function(){
   function buildHTML(message){
     if ( message.image ) {
       let html =
-        `<div class="MessageBox" data-message-id=${message.id}>
-          <div class="list">
-            <div class="list__speaker">
-              ${message.user_name}
-            </div>
-            <div class="list__time">
-              ${message.created_at}
-            </div>
-          </div>
-          <div class="Message">
-            <p class="chat-main__message-list__textarea">
-              ${message.content}
-            </p>
-            <img class="Message__image" src="${message.image}">
-          </div>
-        </div>`
+      `<div class="MessageBox" data-message-id=${message.id}>
+      <div class="list">
+      <div class="list__speaker">
+      ${message.user_name}
+      </div>
+      <div class="list__time">
+      ${message.created_at}
+      </div>
+      </div>
+      <div class="chat-main__message-list__textarea">
+      <p class="Message__content">
+      ${message.content}
+      </p>
+      <img class="Message__image" src="${message.image}">
+      </div>
+      </div>`
+        
+        
+        
+      
       return html;
     } else {
       let html =
-      `<div class="MessageBox" data-message-id=${message.id}>
-        <div class="list">
-          <div class="list__speaker">
+      `
+        <div class="MessageBox" data-message-id=${message.id}>
+          <div class="list">
+            <div class="list__speaker">
             ${message.user_name}
           </div>
           <div class="list__time">
-            ${message.created_at}
+          ${message.created_at}
           </div>
-        </div>
-        <div class="Message">
-          <p class="chat-main__message-list__textarea">
-            ${message.content}
+          </div>
+          <div class="chat-main__message-list__textarea">
+          <p class="Message__content">
+          ${message.content}
           </p>
-        </div>
-      </div>`
+
+          </div>
+          </div>`
       return html;
     };
   }
+
+
 
   $('.Form').on('submit', function(e){
     e.preventDefault();
@@ -53,6 +61,7 @@ $(function(){
       contentType: false
     })
     .done(function(data){
+      // console.log(data)
       let html = buildHTML(data);
       $('.chat-main__message-list').append(html);      
       $('form')[0].reset();
